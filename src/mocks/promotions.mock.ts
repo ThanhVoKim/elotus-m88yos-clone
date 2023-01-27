@@ -14,16 +14,16 @@ export const promotionsFilterMenu = [
 	{ name: 'P2P', value: '#' },
 ];
 
-import background4133 from 'src/assets/promotions/4133.jpg';
-import background4085 from 'src/assets/promotions/4085.jpg';
-import background2577 from 'src/assets/promotions/2577.jpg';
-import background2575 from 'src/assets/promotions/2575.jpg';
 import background2571 from 'src/assets/promotions/2571.jpg';
 import background2573 from 'src/assets/promotions/2573.jpg';
-import background4335 from 'src/assets/promotions/4335.jpg';
-import background2774 from 'src/assets/promotions/2774.jpg';
+import background2575 from 'src/assets/promotions/2575.jpg';
 import background2576 from 'src/assets/promotions/2576.jpg';
+import background2577 from 'src/assets/promotions/2577.jpg';
+import background2774 from 'src/assets/promotions/2774.jpg';
+import background4085 from 'src/assets/promotions/4085.jpg';
 import background4096 from 'src/assets/promotions/4096.jpg';
+import background4133 from 'src/assets/promotions/4133.jpg';
+import background4335 from 'src/assets/promotions/4335.jpg';
 
 export const highlightedPromotions: IPromotionCard[] = [
 	{
