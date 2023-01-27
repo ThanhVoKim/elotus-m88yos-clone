@@ -1,0 +1,22 @@
+.sport-card {
+	width: 255px;
+	border-radius: 8px;
+	position: relative;
+	cursor: pointer;
+
+	&__info {
+		position: absolute;
+		bottom: 0;
+		padding: 0 var(--spacing-12) var(--spacing-12) var(--spacing-12);
+		z-index: 1;
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: 427px;
+		border-radius: 16px;
+
+		&__info {
+			padding: 0 var(--spacing-24) var(--spacing-24) var(--spacing-24);
+		}
+	}
+}

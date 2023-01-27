@@ -1,0 +1,81 @@
+.special-promo-home {
+	padding: var(--spacing-32) 0;
+
+	&__image {
+		border-radius: 16px;
+		width: 100%;
+	}
+
+	.poster {
+		transition: 0.3s all ease-in-out;
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+
+	&__entry {
+		margin: var(--spacing-12) 0 0 0;
+	}
+
+	&__entry-left {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: var(--spacing-16);
+	}
+
+	&__entry-right {
+		display: none;
+	}
+
+	&__list {
+		display: flex;
+		flex-flow: row nowrap;
+		gap: var(--spacing-16);
+	}
+
+	&__list-item {
+		flex: 1 1 25%;
+		text-align: center;
+		.title {
+			margin: var(--spacing-16) 0 0 0;
+			font-size: var(--text-xs);
+			line-height: 1.4;
+			font-weight: bold;
+			color: var(--primary-mode-1) !important;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			max-width: 100%;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: var(--spacing-12) 0 var(--spacing-40) 0;
+
+		&__list-item {
+			.title {
+				font-size: var(--text-sm);
+			}
+		}
+
+		&__entry {
+			display: flex;
+			flex-flow: row nowrap;
+			gap: var(--spacing-16);
+		}
+		&__entry-left {
+			margin: 0;
+			flex: 1 1 50%;
+		}
+
+		&__entry-right {
+			flex: 1 1 50%;
+			display: block;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding: var(--spacing-12) 0 var(--spacing-40) 0;
+	}
+}

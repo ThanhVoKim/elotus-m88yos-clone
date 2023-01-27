@@ -1,0 +1,162 @@
+.match-card {
+	width: 268px;
+	border-radius: 8px;
+	padding: var(--spacing-12);
+	background-color: #fff;
+	color: var(--primary-1);
+	font-size: var(--text-xs);
+	font-weight: bold;
+	transition: all ease 0.5s;
+	color: var(--primary-1);
+	box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	&__league {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-8);
+		font-weight: bold;
+		font-size: var(--text-2xs);
+		margin: 0 0 var(--spacing-12) 0;
+		line-height: 20px;
+	}
+
+	&__league-title {
+		font-weight: 900;
+		text-transform: uppercase;
+		max-width: 114px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__league-date {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-8);
+
+		&::before {
+			content: '';
+			border: 1px solid var(--primary-9);
+			height: 20px;
+			line-height: 1;
+		}
+	}
+
+	&__team {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--spacing-8);
+	}
+
+	&__team-left {
+		flex: auto;
+	}
+
+	&__team-right {
+		flex: 0 0 auto;
+		position: relative;
+		width: 40px;
+		height: 30px;
+	}
+
+	&__team-name {
+		line-height: 1.5;
+		white-space: nowrap;
+
+		& + & {
+			margin: var(--spacing-4) 0 0 0;
+		}
+	}
+
+	&__team-logo {
+		position: absolute;
+		padding: 4px;
+		border-radius: 50%;
+		background: #fff;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+		img {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&__team-logo:first-child {
+		top: 0;
+		left: 0;
+		transform: translate(-25%, -25%);
+		z-index: 2;
+	}
+
+	&__team-logo:last-child {
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+	}
+
+	&__odd {
+		margin: var(--spacing-12) 0 0 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--spacing-8);
+	}
+
+	&__odd-crest {
+		flex: 1 1 auto;
+		border: 1px solid #d3d4d7;
+		border-radius: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 6px 12px;
+	}
+
+	&__odd-crest-text:first-child {
+		color: var(--primary-7);
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 316px;
+		border-radius: 16px;
+		padding: var(--spacing-16);
+
+		&__league {
+			margin: 0 0 var(--spacing-16) 0;
+		}
+
+		&__league-title {
+			max-width: 215px;
+		}
+
+		&__team-name {
+			font-size: var(--text-sm);
+		}
+
+		&__team-right {
+			width: 70px;
+			height: 50px;
+		}
+
+		&__team-logo {
+			padding: 8px;
+
+			img {
+				width: 32px;
+				height: 32px;
+			}
+		}
+
+		&__odd {
+			margin: var(--spacing-20) 0 0 0;
+		}
+
+		&__odd-crest {
+			padding: 8px 14px;
+		}
+	}
+}

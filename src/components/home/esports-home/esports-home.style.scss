@@ -1,0 +1,119 @@
+.esports-home {
+	background-color: var(--primary-1);
+	color: white;
+
+	&__entry {
+		padding: 50px 0;
+		position: relative;
+	}
+
+	.parallax {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__layer5 {
+		background-size: 50%;
+	}
+
+	&__content {
+		width: 50%;
+		min-width: 270px;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1.2;
+		position: relative;
+		z-index: 10;
+	}
+
+	&__title {
+		font-size: 16px;
+		margin-bottom: 8px;
+	}
+
+	&__describe {
+		margin-bottom: 24px;
+	}
+
+	&__partners {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		width: 60%;
+		min-width: 150px;
+		margin: -3px;
+	}
+
+	&__partners-item {
+		padding: 3px;
+		flex: 0 0 auto;
+	}
+
+	&__partners-link {
+		border-radius: 4px;
+		width: 64px;
+		height: 32px;
+		padding: 8px 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 768px) {
+		&__entry {
+			padding: 86px 0;
+		}
+
+		&__content {
+			width: 100%;
+			font-size: 24px;
+		}
+
+		&__title {
+			font-size: 32px;
+			margin-bottom: 12px;
+		}
+
+		&__describe {
+			margin-bottom: 48px;
+		}
+
+		&__partners {
+			margin: -5px;
+		}
+
+		&__partners-item {
+			padding: 5px;
+		}
+
+		&__partners-link {
+			width: 102px;
+			height: 64px;
+			padding: 8px 12px;
+			border-radius: 8px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+	}
+
+	.pinnacle {
+		background-color: var(--eccentric-magenta);
+	}
+	.tfgaming {
+		background-color: var(--sun);
+	}
+	.saba {
+		background-color: var(--poster-blue);
+	}
+	.esoccer {
+		background-color: var(--venetian-red);
+	}
+}

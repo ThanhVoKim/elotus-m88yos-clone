@@ -1,0 +1,59 @@
+.area-mobile-download {
+	display: none;
+	&__entry {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--spacing-12);
+		background-color: var(--primary-2);
+		color: var(--other-1);
+		padding: var(--spacing-40) 0;
+		border-radius: 16px;
+		position: relative;
+	}
+
+	&__image {
+		flex: 0 0 auto;
+		width: 320px;
+
+		img {
+			position: absolute;
+			bottom: 0;
+			left: var(--spacing-16);
+			object-fit: contain;
+			width: 300px;
+			height: 180px;
+			max-height: unset;
+		}
+	}
+
+	&__describe {
+		flex: 1 1 auto;
+		text-transform: uppercase;
+		font-size: var(--text-2xl);
+		line-height: 1.2;
+		font-weight: bold;
+		display: flex;
+		flex-flow: column nowrap;
+		gap: var(--spacing-8);
+	}
+
+	&__action {
+		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.device-icon + .device-icon {
+		margin: 0 0 0 var(--spacing-16);
+	}
+
+	&__button {
+		margin: 0 var(--spacing-32);
+	}
+
+	@media screen and (min-width: 1024px) {
+		display: block;
+		padding: var(--spacing-48) 0;
+	}
+}

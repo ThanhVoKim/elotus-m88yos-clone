@@ -1,0 +1,107 @@
+.live-casio-card {
+	width: 100%;
+	border-radius: 3%;
+	position: relative;
+	cursor: pointer;
+
+	&__background {
+		width: 100%;
+		height: auto;
+	}
+
+	&__info {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--spacing-12);
+
+		&.md {
+			padding: 0 var(--spacing-16) var(--spacing-16) var(--spacing-16);
+		}
+
+		&.lg {
+			padding: 0 var(--spacing-16) var(--spacing-16) var(--spacing-16);
+		}
+	}
+
+	&__button {
+		display: none;
+	}
+
+	&__details {
+		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-4);
+	}
+
+	&__details-item {
+		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-2);
+		font-size: var(--text-xs);
+		color: var(--other-1);
+		list-style: 1;
+
+		.icon {
+			mask-size: contain;
+			mask-repeat: no-repeat;
+			background-color: var(--opacity-3);
+		}
+
+		&.md {
+			.icon {
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+		&.lg {
+			.icon {
+				width: 12px;
+				height: 12px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		&__info {
+			&.md {
+				padding: 0 var(--spacing-24) var(--spacing-24) var(--spacing-24);
+			}
+
+			&.lg {
+				padding: 0 var(--spacing-32) var(--spacing-32) var(--spacing-32);
+			}
+		}
+
+		&__button {
+			display: block;
+		}
+
+		&__details-item {
+			&.lg {
+				font-size: var(--text-sm);
+			}
+
+			&.md {
+				.icon {
+					width: 24px;
+					height: 24px;
+				}
+			}
+
+			&.lg {
+				.icon {
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+	}
+}

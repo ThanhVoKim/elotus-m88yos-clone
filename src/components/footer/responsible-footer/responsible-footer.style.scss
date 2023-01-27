@@ -1,0 +1,49 @@
+.responsible-footer {
+	padding: var(--spacing-20) 0;
+	background-color: var(--secondary-1);
+	color: var(--primary-6);
+	font-size: var(--text-xs);
+	line-height: 1.5;
+
+	&__gambling {
+		margin: 0 0 var(--spacing-16) 0;
+	}
+
+	&__gambling-info {
+		margin: 0 0 var(--spacing-12) 0;
+	}
+
+	&__gambling-partners {
+		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-16);
+		font-weight: bold;
+	}
+
+	&__gambling-logo {
+		flex: 0 0 auto;
+		display: block;
+
+		img {
+			height: 32px;
+			object-fit: contain;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: var(--spacing-24);
+
+		&__gambling {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: var(--spacing-16);
+			margin: 0 0 var(--spacing-24);
+		}
+
+		&__gambling-info {
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.live-casino-home {
+	background-color: var(--primary-1);
+	color: var(--other-1);
+	padding: var(--spacing-32) 0;
+
+	.area-title {
+		&__title {
+			color: var(--other-1);
+		}
+		&__nav {
+			color: var(--primary-9);
+		}
+	}
+
+	&__highlight {
+		display: none;
+		gap: var(--spacing-16);
+		flex-flow: row nowrap;
+	}
+
+	&__highlight-item {
+		flex: auto;
+	}
+
+	&__carousel {
+		overflow: hidden;
+	}
+
+	&__carousel-item {
+		width: 255px;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: var(--spacing-40) 0;
+
+		&__carousel {
+			margin: var(--spacing-16) 0 0 0;
+		}
+
+		&__carousel-item {
+			width: 328px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding: var(--spacing-56) 0 var(--spacing-40) 0;
+
+		&__highlight {
+			display: flex;
+		}
+
+		&__carousel-item {
+			width: 427px;
+		}
+	}
+}

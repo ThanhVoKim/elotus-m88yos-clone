@@ -1,0 +1,97 @@
+.navbar {
+	padding: 20px 0;
+	display: none;
+	&__list {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: flex-start;
+		gap: var(--spacing-24);
+		width: 100%;
+	}
+
+	@media screen and (min-width: 1024px) {
+		display: block;
+	}
+}
+
+.mega-menu {
+	&__title {
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 1;
+		color: var(--primary-9);
+		text-transform: uppercase;
+		&:hover {
+			color: var(--secondary-3);
+		}
+	}
+
+	&__menu {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		padding: 15px 0 0 0;
+		z-index: 9;
+		max-height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: all 0.3s ease-in-out;
+	}
+
+	&__item:hover > &__menu {
+		visibility: visible;
+		max-height: 100vh;
+		overflow: auto;
+		opacity: 1;
+	}
+
+	&__menu-backdrop {
+		background-image: linear-gradient(
+			to top,
+			rgba(#1a202c, 0.95),
+			rgba(#424857, 0.95)
+		);
+		padding: var(--spacing-32) 0;
+	}
+
+	&__menu-entry {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: center;
+		gap: var(--spacing-24);
+	}
+
+	&__rebates {
+		flex: 0 0 auto;
+
+		img {
+			margin: auto;
+			object-fit: contain;
+		}
+
+		.button {
+			height: 32px !important;
+			padding: 9px 16px !important;
+			font-size: 10px !important;
+			margin: auto;
+		}
+	}
+	&__rebates-link {
+		display: block;
+	}
+
+	&__menu-list {
+		display: flex;
+		flex-flow: row wrap;
+		gap: var(--spacing-24);
+	}
+
+	&__poster {
+		img {
+			margin: auto;
+			object-fit: contain;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.carousel {
+	position: relative;
+
+	&:hover &__nav:not(.swiper-button-disabled) {
+		opacity: 1;
+	}
+
+	&__nav {
+		display: none;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		width: 32px;
+		height: 32px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: var(--primary-3);
+		opacity: 0;
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--secondary-3);
+		}
+	}
+
+	.prev {
+		left: 10px;
+	}
+
+	.next {
+		right: 10px;
+	}
+
+	&__nav-icon {
+		background-color: var(--other-1);
+		mask-size: contain;
+		mask-repeat: no-repeat;
+		width: 12px;
+		height: 12px;
+	}
+
+	.swiper-button-disabled {
+		display: none;
+	}
+
+	.swiper-slide {
+		width: max-content;
+	}
+
+	&__container {
+		overflow: visible;
+	}
+
+	@media screen and (min-width: 768px) {
+		&__nav {
+			width: 48px;
+			height: 48px;
+		}
+	}
+}

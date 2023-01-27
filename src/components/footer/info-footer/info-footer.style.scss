@@ -1,0 +1,531 @@
+.info-footer {
+	padding: var(--spacing-32) 0;
+	background-color: var(--primary-1);
+	color: var(--primary-6);
+	&__provider {
+		overflow-x: auto;
+	}
+
+	&__provider-list {
+		display: grid;
+		grid-template-columns: repeat(7, minmax(min-content, 1fr));
+		justify-items: center;
+		align-items: center;
+		gap: var(--spacing-24) var(--spacing-56);
+		margin: 0 0 var(--spacing-32) 0;
+	}
+
+	&__provider-item {
+		display: block;
+		position: relative;
+	}
+
+	&__provider-logo {
+		background-repeat: no-repeat;
+		height: 38px;
+		transition: all 0.3s ease-in-out;
+
+		&.hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+		}
+	}
+
+	&__provider-item:hover &__provider-logo {
+		opacity: 0;
+
+		&.hover {
+			opacity: 1;
+		}
+	}
+
+	&__sponsorship {
+		margin-top: var(--spacing-24);
+	}
+
+	&__sponsorship-heading {
+		font-size: var(--text-base);
+		line-height: 1.4;
+		font-weight: bold;
+		color: var(--primary-7);
+		text-transform: uppercase;
+		text-align: center;
+		padding: 0 var(--spacing-8);
+	}
+
+	&__sponsorship-list {
+		margin-top: var(--spacing-24);
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: flex-start;
+		gap: var(--spacing-40);
+	}
+
+	&__sponsorship-item {
+		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-8);
+	}
+
+	&__sponsorship-logo {
+		height: 40px;
+		object-fit: contain;
+	}
+
+	&__sponsorship-content {
+		flex: auto;
+		font-size: var(--text-xs);
+		line-height: 1.5;
+	}
+
+	&__sponsorship-title {
+		font-weight: bold;
+	}
+
+	@media screen and (min-width: 768px) {
+		&__provider-list {
+			grid-template-columns: repeat(4, minmax(min-content, 1fr));
+			gap: var(--spacing-20) var(--spacing-20);
+		}
+
+		&__sponsorship {
+			margin-top: var(--spacing-32);
+		}
+
+		&__sponsorship-heading {
+			font-size: var(--text-base);
+		}
+
+		&__sponsorship-list {
+			margin-top: var(--spacing-32);
+			gap: var(--spacing-40);
+			justify-content: center;
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		padding: var(--spacing-40);
+
+		&__provider-list {
+			grid-template-columns: repeat(6, minmax(min-content, 1fr));
+		}
+	}
+
+	.ae-casino {
+		width: 66px;
+		height: 33px;
+		background-position: -118px -79px;
+	}
+	.ae-casino.hover {
+		background-position: -118px -114px;
+	}
+	.asia-gaming {
+		width: 120px;
+		background-position: -256px 0px;
+	}
+	.asia-gaming.hover {
+		background-position: -256px -40px;
+	}
+	.bti {
+		background-position: -1050px -650px;
+		width: 125px;
+		height: 47px;
+	}
+	.bti.hover {
+		background-position: -1050px -697px;
+		width: 125px;
+		height: 47px;
+	}
+	.cq9 {
+		width: 98px;
+		background-position: -147px -154px;
+	}
+	.cq9.hover {
+		background-position: -147px -197px;
+	}
+	.habanero {
+		width: 133px;
+		height: 34px;
+		background-position: -186px -79px;
+	}
+	.habanero.hover {
+		background-position: -186px -114px;
+	}
+	.isoft-bet {
+		width: 106px;
+		background-position: -246px -154px;
+	}
+	.isoft-bet.hover {
+		background-position: -246px -197px;
+	}
+	.lottoland {
+		width: 109px;
+		background-position: -353px -154px;
+	}
+	.lottoland.hover {
+		background-position: -353px -197px;
+	}
+	.micro-gaming {
+		width: 116px;
+		background-position: 0px -78px;
+	}
+	.micro-gaming.hover {
+		background-position: 0px -113px;
+	}
+	.opus-gaming {
+		width: 130px;
+		height: 34px;
+		background-position: -4px -4px;
+	}
+	.opus-gaming.hover {
+		background-position: -4px -43px;
+	}
+	.play-n-go {
+		width: 131px;
+		height: 36px;
+		background-position: -331px -415px;
+	}
+	.play-n-go.hover {
+		background-position: -331px -454px;
+	}
+	.playtech {
+		width: 146px;
+		background-position: 0px -155px;
+	}
+	.playtech.hover {
+		background-position: 0px -198px;
+	}
+	.pragmatic {
+		width: 83px;
+		height: 38px;
+		background-position: -379px -2px;
+	}
+	.pragmatic.hover {
+		background-position: -379px -40px;
+	}
+	.saba-sports {
+		width: 98px;
+		background-position: -157px 0px;
+	}
+	.saba-sports.hover {
+		background-position: -157px -40px;
+	}
+	.skywind {
+		width: 142px;
+		height: 35px;
+		background-position: -320px -80px;
+	}
+	.skywind.hover {
+		background-position: -320px -115px;
+	}
+
+	.bigtimegaming {
+		width: 160px;
+		height: 42px;
+		background-position: 0px -243px;
+	}
+	.bigtimegaming.hover {
+		background-position: 0px -285px;
+	}
+	.goldenhero {
+		width: 62px;
+		background-position: -165px -243px;
+		height: 42px;
+	}
+	.goldenhero.hover {
+		background-position: -165px -285px;
+	}
+	.spribe {
+		width: 88px;
+		background-position: -235px -246px;
+	}
+	.spribe.hover {
+		background-position: -235px -288px;
+	}
+	.hacksaw {
+		width: 130px;
+		background-position: -331px -246px;
+	}
+	.hacksaw.hover {
+		background-position: -331px -288px;
+	}
+	.wmcasino {
+		width: 102px;
+		background-position: 0px -334px;
+	}
+	.wmcasino.hover {
+		background-position: 0px -373px;
+	}
+	.redtiger {
+		width: 146px;
+		background-position: -102px -334px;
+	}
+	.redtiger.hover {
+		background-position: -102px -373px;
+	}
+	.pinnacle {
+		width: 112px;
+		background-position: -250px -334px;
+	}
+	.pinnacle.hover {
+		background-position: -250px -373px;
+	}
+	.vivastudio {
+		width: 100px;
+		background-position: -362px -334px;
+	}
+	.vivastudio.hover {
+		background-position: -362px -373px;
+	}
+
+	.obSports {
+		width: 149px;
+		background-position: -920px -490px;
+	}
+	.obSports.hover {
+		background-position: -920px -527px;
+	}
+
+	.pgsoft {
+		width: 110px;
+		background-position: 0px -414px;
+	}
+	.pgsoft.hover {
+		width: 110px;
+		background-position: 0px -453px;
+	}
+
+	.tfgaming {
+		width: 90px;
+		background-position: -586px -568px;
+	}
+	.tfgaming.hover {
+		width: 90px;
+		background-position: -586px -609px;
+	}
+
+	.tfgaming-INR {
+		width: 220px;
+		height: 44px;
+		background-position: -242px -752px;
+	}
+	.tfgaming-INR.hover {
+		width: 220px;
+		height: 44px;
+		background-position: -242px -796px;
+	}
+
+	.obgame {
+		width: 150px;
+		background-position: -461px -490px;
+	}
+	.obgame.hover {
+		width: 150px;
+		background-position: -460px -529px;
+	}
+
+	.evolution {
+		width: 122px;
+		height: 40px;
+		background-position: -465px -567px;
+	}
+
+	.evolution.hover {
+		width: 122px;
+		height: 37px;
+		background-position: -464px -608px;
+	}
+	.pokerng {
+		width: 115px;
+		background-position: -117px -411px;
+	}
+	.pokerng.hover {
+		background-position: -117px -449px;
+	}
+	.pokerv {
+		width: 105px;
+		background-position: -215px -571px;
+	}
+	.pokerv.hover {
+		width: 105px;
+		background-position: -215px -611px;
+	}
+	.pokerky {
+		width: 135px;
+		background-position: -325px -571px;
+	}
+	.pokerky.hover {
+		width: 135px;
+		background-position: -325px -612px;
+	}
+
+	.facaisen {
+		width: 146px;
+		height: 30px;
+		background-position: -154px -494px;
+	}
+	.facaisen.hover {
+		width: 146px;
+		background-position: -150px -530px;
+	}
+	.sexy-gaming {
+		width: 122px;
+		height: 45px;
+		background-position: 0px -650px;
+	}
+	.sexy-gaming.hover {
+		background-position: 1px -698px;
+	}
+	.yggdrasil {
+		width: 150px;
+		height: 37px;
+		background-position: -312px -490px;
+	}
+	.yggdrasil.hover {
+		width: 150px;
+		height: 37px;
+		background-position: -312px -528px;
+	}
+	.netent {
+		width: 91px;
+		height: 32px;
+		background-position: -237px -417px;
+	}
+	.netent.hover {
+		width: 91px;
+		background-position: -237px -456px;
+	}
+
+	.sbobet {
+		background-position: -1239px -650px;
+		width: 148px;
+	}
+	.sbobet.hover {
+		background-position: -1239px -698px;
+		width: 148px;
+	}
+
+	.orientalgaming {
+		background-position: -1173px -649px;
+		width: 65px;
+		height: 47px;
+	}
+	.orientalgaming.hover {
+		background-position: -1173px -696px;
+		width: 65px;
+		height: 47px;
+	}
+
+	.ezugi {
+		background-position: -127px -748px;
+		width: 110px;
+		height: 43px;
+	}
+	.ezugi.hover {
+		background-position: -127px -797px;
+		width: 110px;
+		height: 43px;
+	}
+
+	.advantplay {
+		width: 191px;
+		height: 25px;
+		background-position: -1px -846px;
+	}
+	.advantplay.hover {
+		width: 191px;
+		height: 24px;
+		background-position: -1px -876px;
+	}
+
+	.onetouch {
+		width: 112px;
+		height: 30px;
+		background-position: -193px -839px;
+	}
+	.onetouch.hover {
+		width: 112px;
+		height: 30px;
+		background-position: -193px -869px;
+	}
+
+	.nolimit {
+		width: 95px;
+		height: 26px;
+		background-position: -162px -913px;
+	}
+
+	.nolimit.hover {
+		width: 96px;
+		height: 26px;
+		background-position: -161px -940px;
+	}
+
+	.push-gaming {
+		width: 104px;
+		height: 27px;
+		background-position: -258px -909px;
+	}
+
+	.push-gaming.hover {
+		width: 104px;
+		height: 27px;
+		background-position: -258px -936px;
+	}
+
+	spade-gaming {
+		width: 145px;
+		background-position: -303px -846px;
+		height: 25px;
+	}
+	spade-gaming.hover {
+		background-position: -303px -876px;
+	}
+
+	binnacebet {
+		width: 158px;
+		background-position: -3px -904px;
+		height: 33px;
+	}
+	binnacebet.hover {
+		background-position: -3px -935px;
+	}
+
+	.kingmaker {
+		width: 104px;
+		height: 27px;
+		background-position: -362px -938px;
+	}
+
+	.kingmaker.hover {
+		width: 104px;
+		height: 27px;
+		background-position: -362px -910px;
+	}
+	.tcgaming {
+		width: 125px;
+		height: 36px;
+		background-position: -463px -966px;
+	}
+
+	.tcgaming.hover {
+		width: 125px;
+		height: 36px;
+		background-position: -463px -1000px;
+	}
+
+	.livespin {
+		width: 164px;
+		height: 36px;
+		background-position: -590px -966px;
+	}
+
+	.livespin.hover {
+		width: 164px;
+		height: 36px;
+		background-position: -590px -1002px;
+	}
+}

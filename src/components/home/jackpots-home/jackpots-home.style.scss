@@ -1,0 +1,26 @@
+.jackpots-home {
+	padding: var(--spacing-12) 0 var(--spacing-32) 0;
+
+	&__carousel {
+		margin: var(--spacing-12) 0 0 0;
+		overflow: hidden;
+	}
+
+	&__carousel-item {
+		width: 165px;
+		height: 149px;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: var(--spacing-12) 0 var(--spacing-40) 0;
+
+		&__carousel-item {
+			width: 205px;
+			height: 184px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding: var(--spacing-12) 0 var(--spacing-40) 0;
+	}
+}

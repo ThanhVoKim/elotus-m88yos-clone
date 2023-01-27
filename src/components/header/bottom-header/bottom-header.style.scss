@@ -1,0 +1,150 @@
+.bottom-header {
+	font-size: var(--text-xs);
+	padding: var(--spacing-12) 0;
+	display: none;
+	&__entry {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		gap: var(--spacing-12);
+	}
+
+	&__time {
+		flex: 0 0 auto;
+	}
+
+	&__news {
+		flex: 1 1 auto;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		gap: var(--spacing-4);
+		overflow: hidden;
+	}
+
+	&__news-icon {
+		flex: 0 0 auto;
+		mask-size: 16px;
+		width: 16px;
+		height: 16px;
+		background-color: var(--primary-6);
+	}
+
+	&__news-content {
+		overflow: hidden;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: radial-gradient(
+				circle at center,
+				var(--opacity-2) 90%,
+				var(--secondary-1) 100%
+			);
+			z-index: 1;
+			pointer-events: none;
+		}
+	}
+
+	&__actions {
+		flex: 0 0 auto;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		gap: var(--spacing-12);
+	}
+
+	&__action-item {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		gap: var(--spacing-4);
+		font-weight: bold;
+		font-size: var(--text-2xs);
+		text-transform: uppercase;
+		color: var(--primary-9);
+		cursor: pointer;
+		&:hover {
+			color: var(--secondary-3);
+		}
+	}
+
+	&__action-icon {
+		flex: 0 0 auto;
+		mask-size: 12px;
+		width: 12px;
+		height: 12px;
+		background-color: var(--primary-9);
+	}
+
+	&__action-item:hover &__action-icon {
+		background-color: var(--secondary-3);
+	}
+
+	&__action-flag {
+		width: 16px;
+		height: auto;
+	}
+
+	&__lang-dropdown {
+		border-radius: 8px;
+		background-color: var(--primary-2);
+		padding: var(--spacing-12);
+	}
+
+	&__lang-item {
+		padding: var(--spacing-12);
+		border-radius: 8px;
+		font-size: var(--text-sm);
+		line-height: 1.4;
+		color: var(--other-1);
+	}
+
+	&__lang-item + &__lang-item {
+		margin: var(--spacing-8) 0 0 0;
+	}
+
+	&__marquee {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		width: max-content;
+		gap: var(--spacing-12);
+		animation: marquee 100s linear 0s infinite normal none running;
+	}
+
+	&__marquee-item {
+		white-space: nowrap;
+		color: var(--primary-9);
+		line-height: 1;
+
+		&:hover {
+			color: var(--secondary-3);
+		}
+
+		&::before {
+			content: '\25CF';
+			line-height: 1;
+			padding: 0 4px 0 0;
+			font-size: var(--text-sm);
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		display: block;
+	}
+}
+
+@keyframes marquee {
+	0% {
+		-webkit-transform: translateX(100px);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+	}
+}

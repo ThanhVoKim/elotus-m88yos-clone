@@ -1,0 +1,85 @@
+.sport-home {
+	padding: var(--spacing-32) 0;
+
+	&__match {
+		background-color: #fff;
+	}
+
+	&__match-entry {
+		margin: var(--spacing-24) 0 0 0;
+	}
+
+	&__match-action {
+		display: flex;
+		justify-content: flex-end;
+		padding: var(--spacing-12) 0;
+	}
+
+	&__match-background {
+		display: none;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		object-fit: cover;
+		object-position: left bottom;
+		max-width: unset;
+		max-height: unset;
+		top: -20px;
+		width: 100%;
+		height: calc(100% + 20px);
+		z-index: -1;
+	}
+
+	&__match-carousel {
+		max-width: 100%;
+		padding: 10px;
+		margin: -10px;
+		overflow: hidden;
+	}
+
+	&__sports {
+		padding: var(--spacing-32) 0 0 0;
+		overflow: hidden;
+	}
+
+	@media screen and (min-width: 768px) {
+		&__match-background {
+			display: block;
+		}
+
+		&__match-entry {
+			position: relative;
+			height: 440px;
+			z-index: 0;
+		}
+
+		&__match-action {
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 80px;
+			z-index: 1;
+			padding: 0;
+		}
+
+		&__match-carousel {
+			padding: 20px;
+			margin: -20px;
+		}
+
+		&__match-carousel {
+			position: absolute;
+			bottom: 50px;
+			left: 0;
+			z-index: 1;
+		}
+
+		&__sports {
+			padding: var(--spacing-24) 0 0 0;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding: var(--spacing-56) 0 var(--spacing-80) 0;
+	}
+}
