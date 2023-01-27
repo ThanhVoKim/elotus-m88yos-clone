@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { navMenu } from 'src/mocks';
 import postImage from 'src/assets/rebates/rebate-sports-VN.png';
 
@@ -19,9 +21,9 @@ export const Navbar = () => {
 								key={index}
 								className={`${prefixClassNavbar}__nav-list-item ${prefixClassMegaMenu}__item`}
 							>
-								<a href={nav.path} className={`${prefixClassMegaMenu}__title`}>
+								<Link to={nav.path} className={`${prefixClassMegaMenu}__title`}>
 									{nav.name}
-								</a>
+								</Link>
 
 								{childNav && (
 									<div className={`${prefixClassMegaMenu}__menu`}>
@@ -31,12 +33,12 @@ export const Navbar = () => {
 											>
 												{childNav?.rebates && (
 													<div className={`${prefixClassMegaMenu}__rebates`}>
-														<a
+														<Link
 															className={`${prefixClassMegaMenu}__rebates-link`}
-															href={`${childNav.rebates}`}
+															to={`${childNav.rebates}`}
 														>
 															<img src={postImage} alt="rebate img" />
-														</a>
+														</Link>
 														<Button color="secondary">Chi tiết</Button>
 													</div>
 												)}
@@ -47,12 +49,12 @@ export const Navbar = () => {
 																className={`${prefixClassMegaMenu}__poster`}
 																key={index}
 															>
-																<a
+																<Link
 																	className={`${prefixClassMegaMenu}__poster-link`}
-																	href={`${subMenuNav.path}`}
+																	to={`${subMenuNav.path}`}
 																>
 																	<img src={postImage} alt="nav img" />
-																</a>
+																</Link>
 															</div>
 														);
 													})}

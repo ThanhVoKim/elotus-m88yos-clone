@@ -31,10 +31,14 @@
 	}
 
 	&__match-carousel {
+		padding: 0 20px;
+		margin: 0 -20px;
 		max-width: 100%;
-		padding: 10px;
-		margin: -10px;
 		overflow: hidden;
+	}
+
+	.carousel {
+		overflow: initial;
 	}
 
 	&__sports {
@@ -63,8 +67,6 @@
 		}
 
 		&__match-carousel {
-			padding: 20px;
-			margin: -20px;
 		}
 
 		&__match-carousel {

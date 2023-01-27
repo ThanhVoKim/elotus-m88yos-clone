@@ -7,4 +7,5 @@ export * from './footer-nav.mock';
 export * from './footer-info.mock';
 export * from './footer-responsible.mock';
 export * from './home.mock';
+export * from './promotions.mock';
 export * from './seo-content.mock';

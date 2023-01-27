@@ -1,5 +1,6 @@
 .carousel {
 	position: relative;
+	overflow: hidden;
 
 	&:hover &__nav:not(.swiper-button-disabled) {
 		opacity: 1;
