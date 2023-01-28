@@ -1,0 +1,14 @@
+{
+	"extends": "ts-config-single-spa",
+	"compilerOptions": {
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"jsx": "react-jsx",
+		"baseUrl": "./"
+	},
+	"files": ["src/m88yos-home.tsx"],
+	"include": ["src/**/*"],
+	"exclude": ["src/**/*.test*"]
+}
