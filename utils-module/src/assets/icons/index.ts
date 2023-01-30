@@ -1,0 +1,17 @@
+export { default as arrowLeftIcon } from './icon-arrow-left.svg';
+export { default as arrowRightIcon } from './icon-arrow-right.svg';
+export { default as baccaratIcon } from './icon-baccarat.svg';
+export { default as chevronDownIcon } from './icon-chevron-down.svg';
+export { default as downloadIcon } from './icon-download.svg';
+export { default as facebookIcon } from './icon-facebook.svg';
+export { default as filterIcon } from './icon-filter.svg';
+export { default as instagramIcon } from './icon-instagram.svg';
+export { default as liveChatIcon } from './icon-live-chat.svg';
+export { default as megaphoneIcon } from './icon-megaphone.svg';
+export { default as rafIcon } from './icon-raf.svg';
+export { default as rouletteIcon } from './icon-roulette.svg';
+export { default as sicboIcon } from './icon-sicbo.svg';
+export { default as tiktokIcon } from './icon-tiktok.svg';
+export { default as timerIcon } from './icon-timer.svg';
+export { default as twitterIcon } from './icon-twitter.svg';
+export { default as youtubeIcon } from './icon-youtube.svg';

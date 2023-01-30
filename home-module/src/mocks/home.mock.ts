@@ -1,5 +1,10 @@
-import { IMatch } from 'src/components/match-card';
-import { ISportCard } from 'src/components/sport-card';
+import {
+	ILiveCasioCard,
+	IGameCard,
+	ISportCard,
+	IMatch,
+	ILotteryCard,
+} from '@m88yos/utils';
 
 import leedsUnitedLogo from 'src/assets/teams/Leeds_United.png';
 import cardiffCityLogo from 'src/assets/teams/Cardiff_City.png';
@@ -39,7 +44,6 @@ import ogLiveImage from 'src/assets/live-casino/oglivecasino_vi-VN.png';
 import agLiveImage from 'src/assets/live-casino/LC-Card-AG-min_vi-VN.png';
 import wmLiveImage from 'src/assets/live-casino/wm-casino_vi-VN.png';
 import microLiveImage from 'src/assets/live-casino/microgaminglivedealer_vi-VN.png';
-import { ILiveCasioCard } from 'src/components/live-casio-card';
 
 export const liveCasioHighlightCardData: ILiveCasioCard[] = [
 	{
@@ -101,8 +105,6 @@ import iconPGSOFT from 'src/assets/providers/icon-provider-PG-SOFT.svg';
 import iconSKYWINDGAMES from 'src/assets/providers/icon-provider-SKYWIND-GAMES.svg';
 import iconCQ9 from 'src/assets/providers/icon-provider-CQ9.svg';
 import iconPLAYTECH from 'src/assets/providers/icon-provider-PLAYTECH.svg';
-
-import { IGameCard } from 'src/components/game-card';
 
 export const casioGameCardData: IGameCard[] = [
 	{
@@ -233,7 +235,6 @@ import vncentralLogo from 'src/assets/lottery/vncentral-logo.svg';
 import vncentralImage from 'src/assets/lottery/vncentral-bg.jpg';
 import superspeedLogo from 'src/assets/lottery/superspeed-logo.svg';
 import vnsouthImage from 'src/assets/lottery/vnsouth-bg.jpg';
-import { ILotteryCard } from 'src/components/lottery-card';
 
 export const lotteryCardData: ILotteryCard[] = [
 	{

@@ -4,9 +4,13 @@
 		"experimentalDecorators": true,
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
+		"module": "commonjs",
 		"strict": true,
 		"jsx": "react-jsx",
-		"baseUrl": "./"
+		"baseUrl": "./",
+		"paths": {
+			"@root/*": ["../*"]
+		}
 	},
 	"files": ["src/m88yos-home.tsx"],
 	"include": ["src/**/*"],

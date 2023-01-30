@@ -40,7 +40,9 @@
           "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
           "react": "https://unpkg.com/react@18/umd/react.production.min.js",
           "react-dom": "https://unpkg.com/react-dom@18/umd/react-dom.production.min.js",
-          "@m88yos/home-module": "http://localhost:8500/m88yos-home.js"
+          "@m88yos/utils": "http://localhost:8400/m88yos-utils.js",
+          "@m88yos/home": "http://localhost:8500/m88yos-home.js",
+          "@m88yos/promotions": "http://localhost:8501/m88yos-promotions.js"
         }
       }
     </script>
@@ -83,6 +85,7 @@
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <script>
       System.import("@m88yos/root-config");
+      System.import("@m88yos/utils");
     </script>
     <import-map-overrides-full
       show-when-local-storage="devtools"

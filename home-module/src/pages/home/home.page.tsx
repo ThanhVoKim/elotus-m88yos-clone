@@ -1,4 +1,4 @@
-import { AreaMobileDownload } from 'src/components/area-mobile-download';
+import { AreaMobileDownload, Banner, SeoContent } from '@m88yos/utils';
 import {
 	CasinoHome,
 	EsportsHome,
@@ -8,14 +8,12 @@ import {
 	SpecialPromoHome,
 	SportHome,
 	StepGuide,
-} from 'src/components/home';
-import { SeoContent } from 'src/components/seo-content';
-import { Banner } from 'src/components/banner';
+} from 'src/components';
 
 import { homeBannerData, homeSeoContent } from 'src/mocks';
 import './home.style.scss';
 
-export const prefixClassHome = 'home';
+export const prefixClassHome = 'home-page';
 
 export const Home = () => {
 	return (

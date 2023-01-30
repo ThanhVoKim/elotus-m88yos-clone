@@ -1,0 +1,18 @@
+{
+	"extends": "ts-config-single-spa",
+	"compilerOptions": {
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"module": "commonjs",
+		"strict": true,
+		"jsx": "react-jsx",
+		"baseUrl": "./",
+		"paths": {
+			"@root/*": ["../*"]
+		}
+	},
+	"files": ["src/m88yos-promotions.tsx"],
+	"include": ["src/**/*"],
+	"exclude": ["src/**/*.test*"]
+}
