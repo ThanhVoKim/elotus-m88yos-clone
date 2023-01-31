@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import { FooterLayout, HeaderLayout } from '../';
+import { FooterLayout, HeaderLayout, LoginPopup, RegisterPopup } from '../';
 
 import './main-layout.style.scss';
 
@@ -16,6 +16,9 @@ export const MainLayout: React.FC<PropsWithChildren<unknown>> = (props) => {
 			<footer>
 				<FooterLayout />
 			</footer>
+
+			<RegisterPopup />
+			<LoginPopup />
 		</div>
 	);
 };

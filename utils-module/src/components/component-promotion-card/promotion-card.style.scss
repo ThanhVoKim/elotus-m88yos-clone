@@ -24,30 +24,10 @@
 		padding: 0 var(--spacing-16) var(--spacing-16) var(--spacing-16);
 	}
 
-	&__days-left {
-		display: flex;
-		align-items: center;
+	.promotions-days-left {
 		position: absolute;
 		top: 8px;
 		right: 16px;
-		gap: var(--spacing-4);
-		font-weight: bold;
-		font-size: 8px;
-		line-height: 12px;
-		text-transform: capitalize;
-
-		img {
-			width: 8px;
-			object-fit: contain;
-		}
-	}
-
-	.ribbons {
-		display: flex;
-		align-items: center;
-		gap: var(--spacing-4);
-		flex-flow: row wrap;
-		margin-bottom: var(--spacing-8);
 	}
 
 	&__title {
@@ -81,11 +61,6 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		&__days-left {
-			font-size: var(--text-2xs);
-			line-height: 14px;
-		}
-
 		&__title {
 			font-size: var(--text-xl);
 			line-height: 1.2;
@@ -95,124 +70,8 @@
 			font-size: var(--text-xs);
 			line-height: 18px;
 		}
-
-		.ribbon {
-			font-size: var(--text-2xs);
-			line-height: 14px;
-		}
 	}
 
 	@media screen and (min-width: 1024px) {
 	}
-}
-
-.ribbon {
-	padding: 2px 4px;
-	font-size: 8px;
-	font-weight: bold;
-	line-height: 12px;
-	display: flex;
-	align-items: center;
-	border-radius: 4px;
-	text-transform: uppercase;
-}
-
-.ribbons .ribbon.claimed {
-	background: #f2eadc !important;
-	color: #c68c1b !important;
-}
-
-.ribbons .ribbon.recommended {
-	background: white !important;
-	color: limegreen !important;
-}
-
-.ribbons .ribbon.active {
-	background: #e4f3ea !important;
-	color: #329c69 !important;
-}
-
-.ribbons .ribbon.new-members {
-	background: #ffe600 !important;
-	color: #222939 !important;
-}
-
-.ribbons .ribbon.rebate {
-	background: #044372 !important;
-	color: white !important;
-}
-
-.ribbons .ribbon.rebate {
-	background: #044372 !important;
-	color: white !important;
-}
-
-.ribbons .ribbon.live-casino {
-	background: #9a329c !important;
-	color: #ffffff !important;
-}
-
-.ribbons .ribbon.sports {
-	background: #329c69 !important;
-	color: #ffffff !important;
-}
-
-.ribbons .ribbon.esports {
-	background: #cc0404 !important;
-	color: #ffffff !important;
-}
-
-.ribbons .ribbon.casino-games {
-	background: #1c6aa3 !important;
-	color: #fff !important;
-}
-
-.ribbons .ribbon.keno-lotto {
-	background: #7a9c32 !important;
-	color: #fff !important;
-}
-
-.ribbons .ribbon.vip {
-	background: #caab72 !important;
-	color: #222939 !important;
-}
-
-.ribbons .ribbon.local-promotions {
-	background: #58b6fa !important;
-	color: #fff !important;
-}
-
-.ribbons .ribbon.rewards {
-	background: #f60707 !important;
-	color: #fff !important;
-}
-
-.ribbons .ribbon.new {
-	background: #c9334e !important;
-	color: #ffffff !important;
-}
-
-.ribbons .ribbon.casino-ribbon {
-	background: #1c6aa3 !important;
-	color: #ffffff !important;
-}
-
-.ribbons .ribbon.leaderboard {
-	background: #c68c1b !important;
-	color: #ffffff !important;
-}
-
-.ribbons .ribbon.v8poker {
-	background: #ff1493 !important;
-	color: #ffffff !important;
-}
-
-.ribbons .ribbon.p2p {
-	background: #ff1493 !important;
-	color: #ffffff !important;
-}
-
-.ribbons .ribbon.reload {
-	background: #fc8803 !important;
-	color: #ffffff !important;
 }

@@ -20,3 +20,4 @@ export * from './component-register-popup';
 export * from './component-seo-content';
 export * from './component-sport-card';
 export * from './component-switch';
+export * from './component-collapse';

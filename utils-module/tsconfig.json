@@ -13,6 +13,6 @@
 		}
 	},
 	"files": ["src/m88yos-utils.tsx"],
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "src/components/component-collapse/collapse.type.ts"],
 	"exclude": ["src/**/*.test*"]
 }

@@ -1,0 +1,33 @@
+.collapse {
+	&__button {
+		position: relative;
+		cursor: pointer;
+	}
+
+	&__button-title {
+		padding: 0 16px 0 0;
+	}
+
+	&__button.active &__button-icon {
+		transform: translateY(-50%) rotate(180deg);
+	}
+
+	&__button-icon {
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		right: 8px;
+		top: 50%;
+		transform: translateY(-50%);
+		mask-size: contain;
+		mask-repeat: no-repeat;
+		background-color: var(--primary-9);
+		transition: all 300ms;
+	}
+
+	&__content {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+}

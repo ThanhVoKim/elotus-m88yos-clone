@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ICarouselPromotionsProps } from './carousel-promotions.type';
 
 import './carousel-promotions.style.scss';
 import { carouselPromotionsData } from 'src/mocks';
-import { AreaTitle, Carousel, PromotionCard } from '@m88yos/utils';
+import {
+	AreaTitle,
+	Carousel,
+	IPromotionCard,
+	Modal,
+	PromotionCard,
+} from '@m88yos/utils';
+import { PopupPromotions } from '../component-popup-promotions';
 
 export const prefixClassCarouselPromotions = 'carousel-promotions';
 
 export const CarouselPromotions: React.FC<ICarouselPromotionsProps> = () => {
+	const [promotionSelected, setPromotionSelected] =
+		useState<IPromotionCard | null>(null);
+
+	const handleClosePromotionPopup = () => {
+		setPromotionSelected(null);
+	};
+
 	return (
 		<div className={`${prefixClassCarouselPromotions}`}>
 			{carouselPromotionsData.map((carouselData, carouselIndex) => {
@@ -29,7 +43,12 @@ export const CarouselPromotions: React.FC<ICarouselPromotionsProps> = () => {
 								>
 									{data.map((promotionCard, index) => (
 										<Carousel.Item key={index}>
-											<div className={`${prefixClassCarouselPromotions}__item`}>
+											<div
+												className={`${prefixClassCarouselPromotions}__item`}
+												onClick={() => {
+													setPromotionSelected(promotionCard);
+												}}
+											>
 												<PromotionCard promotionCard={promotionCard} />
 											</div>
 										</Carousel.Item>
@@ -40,6 +59,13 @@ export const CarouselPromotions: React.FC<ICarouselPromotionsProps> = () => {
 					</div>
 				);
 			})}
+
+			<Modal
+				open={!!promotionSelected}
+				onCloseDialog={handleClosePromotionPopup}
+			>
+				<PopupPromotions promotionCard={promotionSelected} />
+			</Modal>
 		</div>
 	);
 };

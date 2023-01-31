@@ -1,0 +1,130 @@
+.rules-promotions {
+	margin: var(--spacing-56) 0 var(--spacing-24) 0;
+
+	.collapse {
+		&__button-icon {
+			right: var(--spacing-16);
+			background-color: var(--primary-1);
+		}
+
+		&__button.active .collapse__button-icon {
+			background-color: var(--primary-9);
+		}
+	}
+
+	.collapse__button.active &__header {
+		background-color: var(--primary-3);
+		color: var(--other-1);
+		border-radius: 10px 10px 0 0;
+	}
+
+	&__header {
+		height: 60px;
+		display: flex;
+		align-items: center;
+		transition: all 0.2s ease-in-out;
+		font-size: var(--text-sm);
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: var(--spacing-8) var(--spacing-24) var(--spacing-8)
+			var(--spacing-16);
+		background-color: var(--primary-10);
+		border-radius: 10px;
+		color: var(--primary-1);
+	}
+
+	&__content {
+		color: var(--primary-mode-1);
+	}
+
+	&__terms {
+		font-size: var(--text-sm);
+		display: flex;
+		ol {
+			width: calc(100% - var(--spacing-32));
+			padding: var(--spacing-16) var(--spacing-32);
+			counter-reset: item;
+			margin: 0 0 2px;
+			box-sizing: content-box;
+			> li {
+				margin-bottom: var(--spacing-16);
+
+				&::before {
+					content: counters(item, '.') '. ';
+					counter-increment: item;
+					margin-right: 2px;
+					font-weight: 700;
+				}
+
+				> ul {
+					margin-top: var(--spacing-4);
+					padding-inline-start: var(--spacing-24);
+				}
+			}
+		}
+	}
+
+	.ol-alpha {
+		li {
+			list-style-type: upper-alpha;
+
+			&::before {
+				content: none;
+			}
+		}
+	}
+
+	&__conversion {
+		padding: var(--spacing-24);
+	}
+
+	&__conversion-title {
+		color: #222939;
+		font-size: 16px;
+		line-height: 1.5;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding-bottom: var(--spacing-20);
+	}
+
+	&__table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: var(--text-sm);
+		color: var(--primary-mode-1);
+
+		tr {
+			height: 44px;
+		}
+
+		tr:nth-child(2n + 1) {
+			background-color: var(--other-mode-1);
+		}
+
+		th {
+			font-weight: bold;
+			background-color: var(--primary-mode-10);
+		}
+
+		th,
+		td {
+			padding: 0 var(--spacing-4);
+			border: 1px solid var(--primary-mode-9);
+			vertical-align: middle;
+			text-align: left;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		&__table {
+			th,
+			td {
+				padding: 0 var(--spacing-12);
+				border: 1px solid var(--primary-mode-9);
+			}
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+	}
+}

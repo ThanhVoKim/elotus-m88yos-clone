@@ -25,7 +25,7 @@ export const PromotionCard: React.FC<IPromotionCardProps> = (props) => {
 				alt="background"
 				className={`${prefixClassPromotionCard}__background`}
 			/>
-			<div className={`${prefixClassPromotionCard}__days-left`}>
+			<div className={`promotions-days-left`}>
 				<img src={timerIcon} alt="timerIcon" />
 				<p>{daysLeft}</p>
 			</div>

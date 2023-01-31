@@ -5,8 +5,6 @@ import {
 	JackpotsHome,
 	LiveCasinoHome,
 	ProvidersHome,
-	SignInModalHome,
-	SignUpModalHome,
 	SpecialPromoHome,
 	SportHome,
 	StepGuide,
@@ -31,8 +29,6 @@ export const Home = () => {
 			<JackpotsHome />
 			<AreaMobileDownload />
 			<SeoContent data={homeSeoContent} />
-			<SignUpModalHome />
-			<SignInModalHome />
 		</div>
 	);
 };
