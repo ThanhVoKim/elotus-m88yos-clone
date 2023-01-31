@@ -1,6 +1,11 @@
 import React from 'react';
 import { IJackpotsHomeProps } from './jackpots-home.type';
-import { AreaTitle, Carousel, LotteryCard } from '@m88yos/utils';
+import {
+	AreaTitle,
+	Carousel,
+	LotteryCard,
+	toggleLoginModalAction,
+} from '@m88yos/utils';
 
 import './jackpots-home.style.scss';
 
@@ -8,6 +13,10 @@ import { lotteryCardData } from 'src/mocks';
 export const prefixClassJackpotsHome = 'jackpots-home';
 
 export const JackpotsHome: React.FC<IJackpotsHomeProps> = () => {
+	const handlePlayClick = () => {
+		toggleLoginModalAction(true);
+	};
+
 	return (
 		<div className={`${prefixClassJackpotsHome}`}>
 			<div className="container">
@@ -21,7 +30,10 @@ export const JackpotsHome: React.FC<IJackpotsHomeProps> = () => {
 						{lotteryCardData.map((data, index) => (
 							<Carousel.Item key={index}>
 								<div className={`${prefixClassJackpotsHome}__carousel-item`}>
-									<LotteryCard lotteryCard={data} />
+									<LotteryCard
+										lotteryCard={data}
+										onPlayClick={handlePlayClick}
+									/>
 								</div>
 							</Carousel.Item>
 						))}

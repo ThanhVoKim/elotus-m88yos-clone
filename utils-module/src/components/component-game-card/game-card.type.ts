@@ -8,4 +8,5 @@ export interface IGameCard {
 
 export interface IGameCardProps {
 	gameCard: IGameCard;
+	onPlayClick?: () => void;
 }

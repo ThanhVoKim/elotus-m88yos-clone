@@ -7,7 +7,7 @@ import tottenhamLogo from 'src/assets/sponsorships/tottenham-hotspur.svg';
 export const footerProvidersData = [
 	{ className: 'asia-gaming', background: providersImage, path: '#' },
 	{ className: 'cq9', background: providersImage, path: '#' },
-	{ className: 'habaneros', background: providersImage, path: '#' },
+	{ className: 'habanero', background: providersImage, path: '#' },
 	{ className: 'isoft-bet', background: providersImage, path: '#' },
 	{ className: 'lottoland', background: providersImage, path: '#' },
 	{ className: 'micro-gaming', background: providersImage, path: '#' },

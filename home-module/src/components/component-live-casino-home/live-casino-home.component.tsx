@@ -2,13 +2,22 @@ import React from 'react';
 import { ILiveCasinoHomeProps } from './live-casino-home.type';
 
 import './live-casino-home.style.scss';
-import { AreaTitle, LiveCasioCard, Carousel } from '@m88yos/utils';
+import {
+	AreaTitle,
+	LiveCasioCard,
+	Carousel,
+	toggleLoginModalAction,
+} from '@m88yos/utils';
 
 import { liveCasioCardData, liveCasioHighlightCardData } from 'src/mocks';
 
 export const prefixClassLiveCasinoHome = 'live-casino-home';
 
 export const LiveCasinoHome: React.FC<ILiveCasinoHomeProps> = () => {
+	const handleClickCard = () => {
+		toggleLoginModalAction(true);
+	};
+
 	return (
 		<div className={`${prefixClassLiveCasinoHome}`}>
 			<div className="container">
@@ -19,7 +28,7 @@ export const LiveCasinoHome: React.FC<ILiveCasinoHomeProps> = () => {
 							key={index}
 							className={`${prefixClassLiveCasinoHome}__highlight-item`}
 						>
-							<LiveCasioCard liveCasioCard={data} />
+							<LiveCasioCard liveCasioCard={data} onClick={handleClickCard} />
 						</div>
 					))}
 				</div>
@@ -28,7 +37,10 @@ export const LiveCasinoHome: React.FC<ILiveCasinoHomeProps> = () => {
 						{liveCasioCardData.map((data, index) => (
 							<Carousel.Item key={index}>
 								<div className={`${prefixClassLiveCasinoHome}__carousel-item`}>
-									<LiveCasioCard liveCasioCard={data} />
+									<LiveCasioCard
+										liveCasioCard={data}
+										onClick={handleClickCard}
+									/>
 								</div>
 							</Carousel.Item>
 						))}

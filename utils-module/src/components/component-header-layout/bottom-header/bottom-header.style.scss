@@ -86,29 +86,6 @@
 		background-color: var(--secondary-3);
 	}
 
-	&__action-flag {
-		width: 16px;
-		height: auto;
-	}
-
-	&__lang-dropdown {
-		border-radius: 8px;
-		background-color: var(--primary-2);
-		padding: var(--spacing-12);
-	}
-
-	&__lang-item {
-		padding: var(--spacing-12);
-		border-radius: 8px;
-		font-size: var(--text-sm);
-		line-height: 1.4;
-		color: var(--other-1);
-	}
-
-	&__lang-item + &__lang-item {
-		margin: var(--spacing-8) 0 0 0;
-	}
-
 	&__marquee {
 		display: flex;
 		flex-flow: row nowrap;

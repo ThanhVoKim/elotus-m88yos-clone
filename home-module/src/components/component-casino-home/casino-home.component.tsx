@@ -2,12 +2,21 @@ import React from 'react';
 import { ICasinoHomeProps } from './casino-home.type';
 
 import './casino-home.style.scss';
-import { AreaTitle, Carousel, GameCard } from '@m88yos/utils';
+import {
+	AreaTitle,
+	Carousel,
+	GameCard,
+	toggleLoginModalAction,
+} from '@m88yos/utils';
 import { casioGameCardData } from 'src/mocks';
 
 export const prefixClassCasinoHome = 'casino-home';
 
 export const CasinoHome: React.FC<ICasinoHomeProps> = () => {
+	const handlePlayClick = () => {
+		toggleLoginModalAction(true);
+	};
+
 	return (
 		<div className={`${prefixClassCasinoHome}`}>
 			<div className="container">
@@ -18,7 +27,7 @@ export const CasinoHome: React.FC<ICasinoHomeProps> = () => {
 						{casioGameCardData.map((data, index) => (
 							<Carousel.Item key={index}>
 								<div className={`${prefixClassCasinoHome}__carousel-item`}>
-									<GameCard gameCard={data} />
+									<GameCard gameCard={data} onPlayClick={handlePlayClick} />
 								</div>
 							</Carousel.Item>
 						))}

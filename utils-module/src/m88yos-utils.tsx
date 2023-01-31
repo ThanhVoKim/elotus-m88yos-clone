@@ -3,4 +3,5 @@ import 'src/styles/index.scss';
 
 export * from './assets';
 export * from './components';
+export * from './store-global';
 export * from './utils';

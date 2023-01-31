@@ -10,11 +10,16 @@ import './banner.style.scss';
 
 import { IBannerProps } from '.';
 import { arrowLeftIcon, arrowRightIcon } from '../../assets';
+import { toggleRegisterModalAction } from '../../store-global';
 
 export const prefixClassBanner = 'banner';
 
 export const Banner: React.FC<IBannerProps> = (props) => {
 	const { bannerId, bannerData } = props;
+
+	const handleRegister = () => {
+		toggleRegisterModalAction(true);
+	};
 
 	return (
 		<div className={`${prefixClassBanner}`}>
@@ -55,7 +60,11 @@ export const Banner: React.FC<IBannerProps> = (props) => {
 											{detail}
 										</div>
 										<div className={`${prefixClassBanner}__action`}>
-											<Button color="primary" size="lg">
+											<Button
+												onClick={handleRegister}
+												color="primary"
+												size="lg"
+											>
 												{buttonTitle}
 											</Button>
 										</div>

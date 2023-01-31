@@ -4,11 +4,12 @@ import './bottom-header.style.scss';
 import { Dropdown } from '../../index';
 import {
 	downloadIcon,
-	flagVi,
+	flagVietnamIcon,
 	liveChatIcon,
 	megaphoneIcon,
 	rafIcon,
 } from '../../../assets';
+import { LanguageDropdown } from '../../component-language-dropdown';
 
 export const prefixClassBottomHeader = 'bottom-header';
 export const BottomHeader = () => {
@@ -60,28 +61,7 @@ export const BottomHeader = () => {
 							/>
 							Hỗ trợ trực tuyến
 						</div>
-						<Dropdown>
-							<Dropdown.Header>
-								<div className={`${prefixClassBottomHeader}__action-item`}>
-									<img
-										src={flagVi}
-										alt="flag icon"
-										className={`${prefixClassBottomHeader}__action-flag`}
-									/>
-									Tiếng Việt (VND)
-								</div>
-							</Dropdown.Header>
-							<Dropdown.Content>
-								<ul className={`${prefixClassBottomHeader}__lang-dropdown`}>
-									<li className={`${prefixClassBottomHeader}__lang-item`}>
-										English
-									</li>
-									<li className={`${prefixClassBottomHeader}__lang-item`}>
-										简体中文
-									</li>
-								</ul>
-							</Dropdown.Content>
-						</Dropdown>
+						<LanguageDropdown />
 					</div>
 				</div>
 			</div>

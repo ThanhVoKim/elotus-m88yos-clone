@@ -11,7 +11,7 @@ export const Button: React.FC<IButtonProps> = (props) => {
 		children,
 		onClick,
 		disabled,
-		color = '',
+		color = 'light',
 		fullWidth = true,
 		size = 'sm',
 	} = props;

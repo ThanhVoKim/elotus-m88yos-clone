@@ -1,0 +1,97 @@
+.login-popup {
+	width: 100%;
+	max-height: 660px;
+	max-width: 480px;
+	margin: auto;
+	overflow: hidden;
+	border-radius: 16px;
+	background-color: var(--primary-1);
+	color: var(--other-1);
+	font-size: var(--text-base);
+
+	display: flex;
+	flex-flow: column nowrap;
+
+	&__close {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: var(--spacing-20) var(--spacing-16) var(--spacing-4)
+			var(--spacing-16);
+	}
+
+	&__close-icon {
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		height: 12px;
+		width: 12px;
+		background-color: var(--primary-6);
+		cursor: pointer;
+	}
+
+	&__content {
+		width: 100%;
+		padding: 0 var(--spacing-16) var(--spacing-40) var(--spacing-16);
+		overflow-y: auto;
+	}
+
+	&__logo {
+		margin: auto;
+		text-align: center;
+	}
+
+	&__form {
+		margin: var(--spacing-48) 0 0 0;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&__form-row {
+		margin: 0 0 var(--spacing-20) 0;
+	}
+
+	&__form-label {
+		margin-left: var(--spacing-16);
+		margin-bottom: var(--spacing-8);
+	}
+
+	&__submit {
+		margin-top: var(--spacing-32);
+	}
+
+	&__forgot {
+		padding: var(--spacing-16) 0 var(--spacing-48) 0;
+	}
+
+	&__new-member {
+		text-align: center;
+		font-size: var(--text-sm);
+	}
+
+	.button {
+		height: 48px;
+		padding: 14px 24px;
+		font-size: 14px;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 768px) {
+		&__close {
+			padding: var(--spacing-32) var(--spacing-32) var(--spacing-24)
+				var(--spacing-32);
+		}
+
+		&__content {
+			padding: 0 var(--spacing-32) var(--spacing-40) var(--spacing-32);
+		}
+
+		.button {
+			height: 56px;
+			padding: 16px 32px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+	}
+}

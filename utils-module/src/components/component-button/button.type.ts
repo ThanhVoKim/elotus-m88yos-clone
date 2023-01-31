@@ -1,4 +1,4 @@
-export type TColorButton = 'primary' | 'secondary';
+export type TColorButton = 'primary' | 'secondary' | 'light' | 'dark';
 export type TSizeButton = 'sm' | 'md' | 'lg';
 
 export interface IButtonProps {

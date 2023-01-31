@@ -9,4 +9,5 @@ export interface ILotteryCard {
 
 export interface ILotteryCardProps {
 	lotteryCard: ILotteryCard;
+	onPlayClick?: () => void;
 }

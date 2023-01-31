@@ -2,16 +2,19 @@ import desktopLogo from 'src/assets/logo/mlogo-desktop.svg';
 
 import './top-header.style.scss';
 import { Button, Switch } from '../../index';
+import {
+	toggleLoginModalAction,
+	toggleRegisterModalAction,
+} from '../../../store-global';
 
 export const prefixClassTopHeader = 'top-header';
 export const TopHeader = () => {
-	// console.log({desktopLogo})
 	const handleLogin = () => {
-		console.log('handle login');
+		toggleLoginModalAction(true);
 	};
 
 	const handleRegister = () => {
-		console.log('handle login');
+		toggleRegisterModalAction(true);
 	};
 
 	return (

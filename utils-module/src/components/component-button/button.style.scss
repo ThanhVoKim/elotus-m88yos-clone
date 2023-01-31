@@ -33,6 +33,22 @@
 		font-size: 12px;
 	}
 
+	&.light {
+		&:hover {
+			background-color: var(--primary-mode-10);
+		}
+	}
+
+	&.dark {
+		color: var(--other-1);
+		background-color: rgba(0, 0, 0, 0);
+		border: 1px solid rgba(0, 0, 0, 0);
+
+		&:hover {
+			background-color: var(--primary-2);
+		}
+	}
+
 	&.primary {
 		color: var(--primary-1);
 		background-color: var(--secondary-3);

@@ -7,7 +7,7 @@ import './lottery-card.style.scss';
 export const prefixClassLotteryCard = 'lottery-card';
 
 export const LotteryCard: React.FC<ILotteryCardProps> = (props) => {
-	const { lotteryCard } = props;
+	const { lotteryCard, onPlayClick } = props;
 	const { title, quantity, background, logo, describe } = lotteryCard;
 
 	return (
@@ -29,7 +29,7 @@ export const LotteryCard: React.FC<ILotteryCardProps> = (props) => {
 				</p>
 			</div>
 			<div className={`${prefixClassLotteryCard}__button`}>
-				<Button color="primary" size="sm">
+				<Button color="primary" size="sm" onClick={onPlayClick}>
 					Chơi ngay
 				</Button>
 			</div>

@@ -9,4 +9,5 @@ export interface ILiveCasioCard {
 
 export interface ILiveCasioCardProps {
 	liveCasioCard: ILiveCasioCard;
+	onClick?: () => void;
 }

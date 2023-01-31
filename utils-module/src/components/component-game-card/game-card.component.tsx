@@ -7,7 +7,7 @@ import './game-card.style.scss';
 export const prefixClassGameCard = 'game-card';
 
 export const GameCard: React.FC<IGameCardProps> = (props) => {
-	const { gameCard } = props;
+	const { gameCard, onPlayClick } = props;
 	const { background, path, title, providerIcon, size = 'sm' } = gameCard;
 
 	return (
@@ -20,7 +20,7 @@ export const GameCard: React.FC<IGameCardProps> = (props) => {
 				/>
 				<div className={`${prefixClassGameCard}__overlay`} />
 				<div className={`${prefixClassGameCard}__float`}>
-					<Button size="sm" color="primary">
+					<Button size="sm" color="primary" onClick={onPlayClick}>
 						Chơi ngay
 					</Button>
 					<Button size="sm" color="secondary">

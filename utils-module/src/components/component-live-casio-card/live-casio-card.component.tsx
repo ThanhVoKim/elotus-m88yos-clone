@@ -8,7 +8,7 @@ import { baccaratIcon, sicboIcon, rouletteIcon } from '../../assets';
 export const prefixClassLiveCasioCard = 'live-casio-card';
 
 export const LiveCasioCard: React.FC<ILiveCasioCardProps> = (props) => {
-	const { liveCasioCard } = props;
+	const { liveCasioCard, onClick } = props;
 	const {
 		background,
 		path,
@@ -19,7 +19,12 @@ export const LiveCasioCard: React.FC<ILiveCasioCardProps> = (props) => {
 	} = liveCasioCard;
 
 	return (
-		<div className={`${prefixClassLiveCasioCard}`}>
+		<div
+			className={`${prefixClassLiveCasioCard}`}
+			onClick={() => {
+				onClick?.();
+			}}
+		>
 			<img
 				src={background}
 				alt="background"

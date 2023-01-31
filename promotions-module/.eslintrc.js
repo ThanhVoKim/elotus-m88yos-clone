@@ -64,7 +64,13 @@ module.exports = {
 				bracketSpacing: true,
 			},
 		],
-		'import/no-unresolved': [2, { commonjs: true, ignore: ['@m88yos/utils'] }],
+		'import/no-unresolved': [
+			2,
+			{
+				commonjs: true,
+				ignore: ['@m88yos/*'],
+			},
+		],
 		'react/self-closing-comp': [
 			'error',
 			{

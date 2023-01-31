@@ -6,3 +6,5 @@ export * from './component-providers-home';
 export * from './component-esports-home';
 export * from './component-special-promo-home';
 export * from './component-jackpots-home';
+export * from './component-signup-modal-home';
+export * from './component-signin-modal-home';

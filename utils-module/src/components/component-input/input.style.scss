@@ -1,0 +1,32 @@
+.input-wrap {
+	&.dark &__element {
+		color: var(--other-1);
+		border-color: var(--primary-3);
+
+		&::placeholder {
+			color: var(--primary-5);
+		}
+	}
+
+	&__element {
+		all: unset;
+		display: block;
+		color: var(--primary-mode-1);
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 700;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 100%;
+		padding: 13px 15px;
+		border: 1px solid var(--primary-mode-9);
+		border-radius: 60px;
+
+		&::placeholder {
+			color: var(--primary-mode-7);
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+	}
+}

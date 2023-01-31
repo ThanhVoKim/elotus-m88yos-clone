@@ -5,3 +5,4 @@ export * from './nav-menu.mock';
 export * from './news.mock';
 export * from './partners.mock';
 export * from './payments.mock';
+export * from './flag-select.mock';
